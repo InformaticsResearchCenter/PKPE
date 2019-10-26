@@ -15,31 +15,31 @@ Dalam kasus penangan \textit{error}, beberapa bahasa pemrograman memiliki \texti
 \item 
 \textit{Syntax errors}
 \par 
-\textit{Syntax errors} adalah \textit{error} yang diakibatkan oleh kesalahan dalam penulisan bahasa program yang tidak dapat dimengerti oleh \textit{compiler} , contohnya adalah sebagai berikut.
+\textit{Syntax errors} adalah \textit{error} yang diakibatkan oleh kesalahan dalam penulisan bahasa program yang tidak dapat dimengerti oleh \textit{compiler} , contohnya dapat dilihat pada listing \ref{lst:1} berikut.
 
-\begin{verbatim}
+\begin{lstlisting}[caption=Contoh commit standar,label={lst:1}]
 #include <stdio.h>
 
 int main(void) {
     printf("Hello World!\n";
     return 0;
 }
-\end{verbatim}
+\end{lstlisting}
  
 Terdapat \textit{syntax error} pada program ini, \textit{syntax error} disini diakibatkan kurangnya tanda ")" pada akhir baris \textit{code} tersebut. Kurangnya "\;" , ")" , "]" , "\}" pada akhir atau awal baris \textit{code} juga dapat menyebabkan terjadinya \textit{syntax error}.
 
 \item 
 \textit{Semantic errors}
 \par 
-\textit{Semantic errors} terjadi akibat tidak tepatnya varibel dengan \textit{statement} yang sudah dibuat, ketidakjelasan logika pada program yang dibuat akan menimbulkan \textit{semantic error} contohnya adalah sebagai berikut.
+\textit{Semantic errors} terjadi akibat tidak tepatnya varibel dengan \textit{statement} yang sudah dibuat, ketidakjelasan logika pada program yang dibuat akan menimbulkan \textit{semantic error} contohnya dapat dilihat pada listing \ref{lst:2} berikut.
 
-\begin{verbatim}
+\begin{lstlisting}[caption=Contoh commit standar,label={lst:2}]
 public static void main(String[] args) {	
 		String NPM;		
 		NPM = "Rayhan";
 		System.out.println(NPM);
 	}
-\end{verbatim}
+\end{lstlisting}
 \par 
 Program ini akan menghasilkan \textit{semantic error},\textit{compiler} tetap dapat menjalan kan program tersebut,namun output yang dikeluarkan berupa String. jika output yang diinginkan berupa NPM yang bertipe data INT, maka tipe data yang diinputkan harus sesuai dengan output yang diinginkan.
 \end{enumerate}

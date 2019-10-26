@@ -10,14 +10,14 @@ Dalam suatu program terdapat kesalahan \textit{internal} maupun \textit{external
 \textit{Syntax error} merupakan jenis kesalahan yang terjadi akibat perintah yang diketikan tidak sesuai dengan aturan \textit{code} bahasa pemrograman yang sedang digunakan. Karena setiap bahasa pemrograman memiliki aturan pengkodean yang harus dipatuhi. Contohnya pada bahasa pemrograman C, setiap perintah harus diakhiri dengan tanda titik koma (;), jika tidak diakhiri dengan titik koma(;) maka program akan menampilkan pesan \textit{syntax error} saat dijalankan. Maka dari itu untuk menghindari kesalahan dalam penulisan program kita harus mengetahui tata cara penulisan program atau aturan dalam bahasa pemrograman tersebut agar tidak terjadi kesalahan \textit{syntax}.
 
 \item \textit{Passing Variable Error}
-\textit{Passing variable error} merupakan jenis \textit{error} yang terjadi akibat kesalahan dalam menginput \textit{variable}. berikut contoh \textit{Passing variable error}.
-\begin{verbatim}
+\textit{Passing variable error} merupakan jenis \textit{error} yang terjadi akibat kesalahan dalam menginput \textit{variable}. berikut contoh \textit{Passing variable error} dapat dilihat pada listing \ref{lst:9} berikut.
+\begin{lstlisting}[caption=Contoh commit standar,label={lst:9}]
 public static void main(String[] args) {	
 		String NPM;		
 		NPM = "Rayhan";
 		System.out.println(NPM);
 	}
-\end{verbatim}
+\end{lstlisting}
 Program ini merupakan contoh \textit{Passing variable error}. karena tipe data yang dinputkan salah, seharusnya tipe data yang diinputkan berupa \textit{integer} (angka) bukan \textit{String}.
 
 \item \textit{Run-time Error}
