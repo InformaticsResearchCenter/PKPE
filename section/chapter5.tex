@@ -1,0 +1,33 @@
+\chapter{Kegiatan Mingguan}
+
+\section{Form Penilaian Mingguan}
+\par
+Dalam rangka penanganan \textit{error} setiap minggunya diukur dengan penilaian. Setiap penilaian memiliki bobot dan karakteristik. 
+Masing \textit{error} dilaporkan dalam Issues di github, yang kemudian \textbf{semua proses} penyelesaiannya dilakukan dengan commit sesuai dengan nomor issues nya.
+Issues bukan hanya judul \textit{error}nya saja, tetapi bisa juga judulnya fitur yang dikembangkan yang pastinya selama proses pengembangan pasti \textit{error}.
+Karena tidak wajar proses pengembangan akan terbebas dari \textit{error}. Tabel \ref{table:penilaian}, adalah standar penilaian mingguan yang dilaporkan kepada pembimbimng nilainya.
+
+ \begin{longtable}{|p{.03\textwidth}|p{.40\textwidth}|p{.40\textwidth}|p{.10\textwidth}|}
+\hline
+No&Parameter&Bobot&Nilai\\
+\hline
+1 &Setiap Commit memiliki pesan yang mudah dibaca dan dimengerti, berisi apa yang dilakukan dan ditambahkan dengan nomor \textit{Issues}&5 poin per commit yang ada di dalam issues& \\ \hline
+2 &Terdapat \textit{Error} dalam kurun waktu 1 minggu selama bimbingan yang sudah dibuatkan pada \textit{Issues} beserta penjelasan \textit{error} tersebut&\textbf{10} point untuk issues kode error yang baru dan terselesaikan,\textbf{5} point untuk issues kode error yang baru dan belum terselesaikan, \textbf{1} point untuk issues kode \textit{error yang sama}& \\ \hline
+3 &Aplikasi berbasiskan kelas dan atau method dan atau fungsi dimana setiap kelas,method,fungsi hanya memiliki 1 algoritma kegiatan saja&10 poin,hanya berlaku 1 kali & \\ \hline
+4 &Memiliki Program utama yang terpisah dari file fungsi, \textit{class}, dan \textit{method}&5 poin ,hanya berlaku 1 kali & \\ \hline
+5 &Semua penggunaan nama variable di dalam program menggambarkan isi dari variabel& 5 poin,hanya berlaku 1 kali& \\ \hline
+6 &Tutorial pengembangan aplikasi serta penanganan errornya dituliskan dalam laporan berformat latex beserta tabel nilainya dalam 1 chapter telah di compile dan bebas error latex & 5 poin,hanya berlaku 1 kali& \\ \hline
+\multicolumn{4}{c}{\textbf{Penilaian}}\\ \hline
+
+7 &Nilai akhir&Akumulasi dari point-point diatas & \\ \hline
+
+\caption{Tabel Penilaian}
+\label{table:penilaian}
+\end{longtable}
+
+\section{Contoh Kegiatan Mingguan}
+Contoh commit yang standar bisa dilihat pada listing \ref{lst:contohcommit}. Penulisan pesan commit jelas dan mudah dimengerti dan berhubungan dengan file kodok.py serta dikaitkan dengan issues nomor 2.
+\begin{lstlisting}[caption=Contoh commit standar,label={lst:contohcommit}]
+git add kodok.py
+git commit -m "perubahan pada perintah print dengan menambahkan tanda kurung karena beda versi python yang sebelumnya dari versi 2.6 #2"
+\end{lstlisting}
