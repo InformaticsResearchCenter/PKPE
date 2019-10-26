@@ -1,2 +1,2 @@
-# PPJI
-Panduan Penulisan Jurnal Ilmiah
+# PKPE
+Panduan Keahlian Penanganan Error
