@@ -7,7 +7,7 @@ Disini kami akan memberikan contoh dari beberapa error aplikasi
 \item Error Syntax 
 \par
 Program Bahasa C dibawah ini akan error pada baris ke-4 karena pada baris sebelumnya (baris ke-3) statement belum ditutup menggunakan titik koma (;), contohnya dapat dilihat pada listing \ref{lst:10} berikut
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:10}]
+\begin{lstlisting}[language=Java, caption=Contoh \textit{syntax error},label={lst:10}]
 	void main() {
 	int a=2, b=0;
 	printf("%i", a)
@@ -17,7 +17,7 @@ Program Bahasa C dibawah ini akan error pada baris ke-4 karena pada baris sebelu
 \item Error Runtime
 \par 
 contoh yang banyak terjadi error pada aplikasi adalah error runtime karena pembagian suatu bilangan dengan nol. Lihat contoh program bahasa c berikut ini Secara syntax tentu tidak terdapat error, namun jika dirunning, operasi pembagian pada baris ke-5 akan menyebabkan error “division by zero”. contohnya dapat dilihat pada listing \ref{lst:11} berikut
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:11}]
+\begin{lstlisting}[language=Java, caption=Contoh \textit{division by zero error},label={lst:11}]
 	void main() {
 	int a=2, b=0;
 	printf("%i", a)
@@ -28,7 +28,7 @@ contoh yang banyak terjadi error pada aplikasi adalah error runtime karena pemba
 \item Logical Error
 \par
 contoh error yang termasuk dalam jenis Logical Error adalah saat kita membuat sebuah program yang menghasilkan nilai B dari suatu lingkaran yang A diinput oleh user. Jika user menginputkan nilai 7, tentu program seharusnya akan menampilkan nilai 154. Namun jika ternyata program tersebut tidak menghasilkan hasil sesuai yang diharapkan, inilah yang disebut sebagai logical error. contohnya dapat dilihat pada listing \ref{lst:12} berikut
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:12}]
+\begin{lstlisting}[language=Java, caption=Contoh \textit{logical error},label={lst:12}]
 void main() {
 int A;
 float B;
@@ -62,7 +62,7 @@ Menunjukkan sebuah pernyataan yang berada dalam sebuah \textit{batch}, prosedur 
 \par 
 error dalam bahasa pemrograman disini kita akan menjalankan program "hello world" dan pada saat dijalankan terdapat peringatan.contohnya dapat dilihat pada listing \ref{lst:13} berikut
 
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:13}]
+\begin{lstlisting}[language=Java, caption=Contoh warning error,label={lst:13}]
 java.lang.UnsupportedClassVersionError: "hello world" :
  Unsupported major.minor version 51.0
     at java.lang.ClassLoader.defineClass1(Native Method)

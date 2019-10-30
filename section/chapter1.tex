@@ -17,29 +17,29 @@ Dalam kasus penangan \textit{error}, beberapa bahasa pemrograman memiliki \texti
 \par 
 \textit{Syntax errors} adalah \textit{error} yang diakibatkan oleh kesalahan dalam penulisan bahasa program yang tidak dapat dimengerti oleh \textit{compiler} , contohnya dapat dilihat pada listing \ref{lst:1} berikut.
 
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:1}]
+\begin{lstlisting}[language=C, caption=Contoh Syntax errors,label={lst:1}]
 #include <stdio.h>
 
 int main(void) {
-    printf("Hello World!\n";
+    printf("Poltekpos\n";
     return 0;
 }
 \end{lstlisting}
  
-Terdapat \textit{syntax error} pada program ini, \textit{syntax error} disini diakibatkan kurangnya tanda ")" pada akhir baris \textit{code} tersebut. Kurangnya "\;" , ")" , "]" , "\}" pada akhir atau awal baris \textit{code} juga dapat menyebabkan terjadinya \textit{syntax error}.
+Terdapat \textit{syntax error} pada program ini, \textit{syntax error} disini diakibatkan kurangnya tanda ")" pada akhir baris kode \textbf{ke-4}. Kurangnya "\;" , ")" , "]" , "\}" pada akhir atau awal baris \textit{code} juga dapat menyebabkan terjadinya \textit{syntax error}.
 
 \item 
 \textit{Semantic errors}
 \par 
 \textit{Semantic errors} terjadi akibat tidak tepatnya varibel dengan \textit{statement} yang sudah dibuat, ketidakjelasan logika pada program yang dibuat akan menimbulkan \textit{semantic error} contohnya dapat dilihat pada listing \ref{lst:2} berikut.
 
-\begin{lstlisting}[caption=Contoh commit standar,label={lst:2}]
+\begin{lstlisting}[language=Java,caption=Contoh \textit{Semantic errors},label={lst:2}]
 public static void main(String[] args) {	
-		String NPM;		
+		Int NPM;		
 		NPM = "Rayhan";
 		System.out.println(NPM);
 	}
 \end{lstlisting}
 \par 
-Program ini akan menghasilkan \textit{semantic error},\textit{compiler} tetap dapat menjalan kan program tersebut,namun output yang dikeluarkan berupa String. jika output yang diinginkan berupa NPM yang bertipe data INT, maka tipe data yang diinputkan harus sesuai dengan output yang diinginkan.
+Program ini akan menghasilkan \textit{semantic error},\textit{compiler} tetap dapat menjalan kan program tersebut,namun output yang dikeluarkan berupa String yang terapat pada baris ke\textbf{3}. jika output yang diinginkan berupa NPM yang bertipe data INT sperti pada baris ke\textbf{2}, maka tipe data yang diinputkan harus sesuai dengan output yang diinginkan.
 \end{enumerate}
